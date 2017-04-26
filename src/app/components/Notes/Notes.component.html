@@ -1,8 +1,8 @@
 <h1>{{title}}</h1><br>
-<div class="panel panel-default">
-    <div class="panel-heading"><b>Scampi fait maison</b> <br>Cuisine</div>
+<div class="panel panel-default" *ngFor = "let nots of Notes">
+    <div class="panel-heading"><b>{{nots.title}}</b> <br>{{nots.Categorie}} - {{nots.Date}}</div>
     <div class="panel-body">
-      <p class="text-justify"></p><br>
+      <p class="text-justify">{{nots.Content}}</p><br>
       <a href="" class="btn btn-primary glyphicon glyphicon-edit"></a>
       <a href="" class="btn btn-primary glyphicon glyphicon-remove"></a>
     </div>

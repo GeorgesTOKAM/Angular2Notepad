@@ -6,9 +6,9 @@
     <tr>
     </thead>
     <tbody>
-    <tr>
-      <td>1</td>
-      <td>Cuisine</td>
+    <tr *ngFor = "let cat of categories">
+      <td>{{cat.id}}</td>
+      <td>{{cat.nom}}</td>
       <td><a href="" (click)="modifcat()">Modifier</a></td>
       <td><a href="" (click)="delfcat()">Supprimer</a></td>
     </tr>
