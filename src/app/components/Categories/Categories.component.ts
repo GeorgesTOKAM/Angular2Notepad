@@ -14,5 +14,7 @@ export class CategoriesComponent implements OnInit{
   ngOnInit(){
     this.categoriesService.getCategorie().subscribe((data) => this.categories = data);
   }
-
+  delfcat(){
+    console.log("click");
+  }
 }
